@@ -1,0 +1,38 @@
+@import './reset.css';
+
+:root {
+  --font-sans-stack: Inter, "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+}
+
+body {
+  background: black;
+}
+h1, a, p {
+  font-family: var(--font-sans-stack);
+  color: white;
+}
+.site-shell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  margin-block: 2rem;
+  a {
+    font-size: 1.2rem;
+  }
+  ul {
+    display: flex;
+    gap: 2rem;
+  }
+}
