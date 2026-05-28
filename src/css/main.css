@@ -7,7 +7,10 @@
 body {
   background: black;
 }
-h1, a, p {
+h1, h2, h3, h4, h5, h6 {
+  margin-block: 1rem;
+}
+h1, h2, h3, h4, h5, h6, a, p {
   font-family: var(--font-sans-stack);
   color: white;
 }
@@ -17,11 +20,16 @@ h1, a, p {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  width: min(60rem, calc(100% - 4rem));
+  margin: 0 auto;
 }
 
 h1 {
-  color: white;
   font-size: 3rem;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5rem;
 }
 
 .main-nav {
